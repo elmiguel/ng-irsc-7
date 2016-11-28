@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IRSC | Be a Pioneer.</title>
+  <base href="/ng-irsc-7/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Fjalla+One:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animate.css" type="text/css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <script>
+  // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
+</head>
+<body id="page-top" class="index">
+
+
+  <app-root id="app">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive animated pulse" src="assets/img/Pioneer_Full_Color.svg" alt="">
+                    <div class="intro-text">
+                        <!-- <span class="name">Indian River State College</span> -->
+                        <h1 class="display-1 name">
+                          Indian River State College
+                        </h1>
+                        <br>
+                        <!-- <a pageScroll href="#steps" class="btn btn-warning"> Apply Now </a> -->
+                        <br><br>
+                        <span class="skills">Please wait while we load the awesomeness...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  </app-root>
+
+
+  <!-- jQuery -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/js/jquery.mixitup.min.js"></script>
+  <!-- <script src="assets/vendor/jquery/bootstrap-toolkit.min.js"></script> -->
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment-with-locales.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/humanize-duration/3.9.1/humanize-duration.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <!--script src="assets/js/jqBootstrapValidation.js"></script>
+  <script src="assets/js/contact_me.js"></script-->
+
+  <!-- Theme JavaScript -->
+  <!--script src="assets/js/freelancer.min.js"></script-->
+
+  <script>
+
+    $(function(){
+        $('.irsc-gallery').mixItUp();
+    });
+
+
+    // Setup an event listener to watch the menu items to
+    // close the bs menu. Since with Angular 2, jQuery
+    // is really available to dynamically loaded elements.
+    // in the way one might think.
+
+    // $('*').on('hide.bs.collapse',function () {
+    //   console.log('hidden');
+    //   console.log(this);
+    // });
+
+    function isVisible(obj) {
+      return obj.offsetWidth > 0 && obj.offsetHeight > 0;
+    }
+
+    document.addEventListener('click', function(e){
+      if(
+        e.target.hasAttribute('navMenuItem') &&
+        isVisible(document.getElementById('menuMoreButton'))
+      ){
+        document.getElementById('menuButton').click();
+      }
+    }, false);
+
+    // Setup an event listener to watch the close icons
+    // on card elements to animate and hide the card
+    document.addEventListener('click', function(e){
+      var el = e.target;
+      if(el.hasAttribute('card-close')){
+        if(!el.parentNode.parentNode.classList.contains('fadeOutLeft')){
+          el.parentNode.parentNode.classList.add('fadeOutLeft')
+          setTimeout(function(){
+            el.parentNode.parentNode.classList.add('hidden')
+          }, 500);
+        }
+      }
+    });
+
+
+  </script>
+
+
+<script type="text/javascript" src="inline.js"></script><script type="text/javascript" src="styles.c1ada6654f8ff3e71845.bundle.js"></script><script type="text/javascript" src="scripts.0b71f580228711877c9a.bundle.js"></script><script type="text/javascript" src="main.c9764e4c8361b89bc08d.bundle.js"></script></body>
+</html>

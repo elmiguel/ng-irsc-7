@@ -1,0 +1,37 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0" y="0"
+     width="693" height="220"
+     xml:space="preserve">
+  <pattern id="water1" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+	   <path fill="#004990" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+  </pattern>
+  <pattern id="water2" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+	   <path fill="#0b59a3" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+  </pattern>
+  <pattern id="water3" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+	   <path fill="#166cbc" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+  </pattern>
+  <pattern id="water4" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+	   <path fill="#4690d6" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+  </pattern>
+
+  <g id="eff">
+  	<rect class="water-fill" fill="url(#water1)" x="-300" y="100" width="1200" height="120" opacity="0.3">
+      <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="20s"/>
+    </rect>
+
+     <rect class="water-fill" fill="url(#water2)" y="95" width="1600" height="120" opacity="0.3">
+      <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="20s"/>
+    </rect>
+
+    <rect class="water-fill" fill="url(#water3)" y="105" width="1800" height="220" opacity="0.3">
+      <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="20s"/>
+    </rect>
+
+    <rect class="water-fill" fill="url(#water4)" y="105" width="2000" height="120" opacity="0.3">
+      <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="20s"/>
+    </rect>
+  </g>
+
+  <use xlink:href="#eff" opacity="0.9"/>
+</svg>

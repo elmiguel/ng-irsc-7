@@ -1,0 +1,30 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+  x="0" y="0"
+  width="1024" height="1024"
+  viewBox="0 100 1024 1024"
+  xml:space="preserve">
+    <pattern id="cloud1" width="1" height="1.1" >
+      <path id="cloud-icon" fill="#fff" d="M406.1 227.63c-8.23-103.65-144.71-137.8-200.49-49.05 -36.18-20.46-82.33 3.61-85.22 45.9C80.73 229.34 50 263.12 50 304.1c0 44.32 35.93 80.25 80.25 80.25h251.51c44.32 0 80.25-35.93 80.25-80.25C462 268.28 438.52 237.94 406.1 227.63z"/>
+    </pattern>
+
+    <pattern id="cloud2" width="1" height="1.1">
+     <path id="cloud-icon" fill="#fff" d="M406.1 227.63c-8.23-103.65-144.71-137.8-200.49-49.05 -36.18-20.46-82.33 3.61-85.22 45.9C80.73 229.34 50 263.12 50 304.1c0 44.32 35.93 80.25 80.25 80.25h251.51c44.32 0 80.25-35.93 80.25-80.25C462 268.28 438.52 237.94 406.1 227.63z"/>
+   </pattern>
+   <g id="clouds">
+     <rect class="cloud-fill" fill="url(#cloud1)" x="-300" y="100" width="1024" height="512" opacity=".80">
+       <animate attributeType="xml" attributeName="x" from="2000" to="-2000" repeatCount="indefinite" dur="40s"/>
+     </rect>
+     <rect class="cloud-fill" fill="url(#cloud2)" x="-600" y="250" width="512" height="512" opacity=".80">
+       <animate attributeType="xml" attributeName="x" from="2000" to="-2000" repeatCount="indefinite" dur="42s"/>
+     </rect>
+     <rect class="cloud-fill" fill="url(#cloud1)" x="-500" y="150" width="1024" height="512" opacity=".80">
+       <animate attributeType="xml" attributeName="x" from="2000" to="-2000" repeatCount="indefinite" dur="45s"/>
+     </rect>
+     <rect class="cloud-fill" fill="url(#cloud2)" x="-1020" y="200" width="512" height="512" opacity=".80">
+       <animate attributeType="xml" attributeName="x" from="2000" to="-2000" repeatCount="indefinite" dur="43s"/>
+     </rect>
+   </g>
+ </svg>

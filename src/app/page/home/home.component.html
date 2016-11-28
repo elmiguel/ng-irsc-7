@@ -1,0 +1,401 @@
+
+  <!-- Header -->
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <img class="img-responsive animated pulse" src="assets/img/Pioneer_Full_Color.svg" alt="">
+                  <div class="intro-text">
+                      <!-- <span class="name">Indian River State College</span> -->
+                      <h1 class="display-1 name">
+                        Indian River State College
+                      </h1>
+                      <br>
+                      <a pageScroll href="#steps" class="btn btn-warning"> Apply Now </a>
+                      <br><br>
+                      <span class="skills">Find Your Path. Build Your Career. Be a Pioneer!</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+ <section [@factsState]="scrollimateOptions.facts.currentState"
+           [scrollimate]="scrollimateOptions.facts">
+    <div id="facts" class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="display-3 text-center">
+            <!-- <counto [step]="1" [countTo]="3" [countFrom]="100" [duration]="1" (countoChange)="intermediate = $event">{{intermediate | number: '1.0-0'}}</counto> -->
+            3rd most affordable in the nation!
+          </h1>
+
+          <p>
+            Indian River State College has been rated as the third most affordable
+            college in the country according to the U.S. Department of Education's
+            College Affordability and Transparency List released on Month xx, xxx.
+            The ranking was based on average net prices for colleges in the United
+            States with undergraduate enrollment of
+            <!-- 5,000 -->
+            <counto [step]="1" [countTo]="6000" [countFrom]="5000" [duration]="100" (countoChange)="intermediate = $event">{{intermediate | number: '1.0-0'}}</counto>
+            or more.
+          </p>
+
+          <a routerLink="/about"
+             class="btn btn-success btn-outline pull-right">
+             Learn More <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="steps"></div>
+
+  <!-- Portfolio Grid Section -->
+  <section id="portfolio"
+           [@stepsState]="scrollimateOptions.steps.currentState"
+           [scrollimate]="scrollimateOptions.steps">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2>How to start</h2>
+                  <br>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3 portfolio-item text-center">
+                  <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="assets/img/svg/brainstorm.svg" class="img-responsive" alt="" style="max-height: 250px;">
+                  </a>
+
+                  <h4>Find Your Path</h4>
+                  <p class="text-left">
+                    The application process isn't difficult, but it can be daunting—if you
+                    let it. From tackling Apply IRSC to taking your SATs, find out what you
+                    need to do to be a Pioneer.
+                  </p>
+              </div>
+              <div class="col-sm-3 portfolio-item text-center">
+                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="assets/img/svg/id-card.svg" class="img-responsive" alt="" style="max-height: 250px;">
+                  </a>
+
+                  <h4>Apply</h4>
+                  <p class="text-left">
+                    The application process isn’t difficult, but it can be daunting—if you
+                    let it. From tackling Apply IRSC to taking your SATs, find out what you
+                    need to do to be a Pioneer.
+                  </p>
+              </div>
+              <div class="col-sm-3 portfolio-item text-center">
+                  <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="assets/img/svg/calculation.svg" class="img-responsive" alt="" style="max-height: 250px;">
+                  </a>
+
+                  <h4>Afford</h4>
+                  <p class="text-left">
+                    IRSC has been rated as the third most affordable college in the country.
+                  </p>
+              </div>
+              <div class="col-sm-3 portfolio-item text-center">
+                  <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="assets/img/svg/graduate.svg" class="img-responsive" alt="" style="max-height: 250px;">
+                  </a>
+
+                  <h4>Enroll</h4>
+                  <p class="text-left">
+                    Be a part of IRSC and be a Pioneer. Learn how to set yourself up for the future.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+<!-- Culture stuff -->
+<section [@stepsState]="scrollimateOptions.gallery.currentState"
+[scrollimate]="scrollimateOptions.gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <gallery>
+          <gallery-image category="category-1" data-my-order="1">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat1-1&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+          <gallery-image category="category-1" data-my-order="2">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat1-2&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+          <gallery-image category="category-2" data-my-order="3">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat2-3&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+          <gallery-image category="category-2" data-my-order="4">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat2-4&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+
+          <gallery-image category="category-1" data-my-order="5">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat1-5&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+          <gallery-image category="category-1" data-my-order="6">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat1-6&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+          <gallery-image category="category-2" data-my-order="7">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat2-7&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+          <gallery-image category="category-2" data-my-order="8">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=cat2-8&w=256&h=256" alt="image" class="img-responsive">
+          </gallery-image>
+        </gallery>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-warning">
+    <h1 class="display text-center text-shadow">Set Sail. Be a Pioneer.</h1>
+</section>
+
+  <!-- Portfolio Modals -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Project Title</h2>
+                          <hr class="star-primary">
+                          <img src="assets/img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                          <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                          <ul class="list-inline item-details">
+                              <li>Client:
+                                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong><a href="http://startbootstrap.com">April 2014</a>
+                                  </strong>
+                              </li>
+                              <li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li>
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Project Title</h2>
+                          <hr class="star-primary">
+                          <img src="assets/img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                          <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                          <ul class="list-inline item-details">
+                              <li>Client:
+                                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong><a href="http://startbootstrap.com">April 2014</a>
+                                  </strong>
+                              </li>
+                              <li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li>
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Project Title</h2>
+                          <hr class="star-primary">
+                          <img src="assets/img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                          <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                          <ul class="list-inline item-details">
+                              <li>Client:
+                                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong><a href="http://startbootstrap.com">April 2014</a>
+                                  </strong>
+                              </li>
+                              <li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li>
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Project Title</h2>
+                          <hr class="star-primary">
+                          <img src="assets/img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                          <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                          <ul class="list-inline item-details">
+                              <li>Client:
+                                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong><a href="http://startbootstrap.com">April 2014</a>
+                                  </strong>
+                              </li>
+                              <li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li>
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Project Title</h2>
+                          <hr class="star-primary">
+                          <img src="assets/img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                          <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                          <ul class="list-inline item-details">
+                              <li>Client:
+                                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong><a href="http://startbootstrap.com">April 2014</a>
+                                  </strong>
+                              </li>
+                              <li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li>
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Project Title</h2>
+                          <hr class="star-primary">
+                          <img src="assets/img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                          <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                          <ul class="list-inline item-details">
+                              <li>Client:
+                                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong><a href="http://startbootstrap.com">April 2014</a>
+                                  </strong>
+                              </li>
+                              <li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li>
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>

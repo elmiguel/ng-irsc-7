@@ -1,0 +1,22 @@
+<section class="success">
+  <div class="container">
+    <h1>Your Search Results:</h1>
+
+    <div class="row">
+      <div class="col-xs-12 col-lg-offset-1">
+        <irsc-card template="ngFor let result of searchResults$ | async; let i = index" id="card-searchResult-{{i}}" >
+          <irsc-card-header>{{result.tag}}</irsc-card-header>
+          <irsc-card-content>
+            <p>{{result.content}}</p>
+          </irsc-card-content>
+          <irsc-card-footer>
+            <a href="{{result.link}}">
+              <span class="label label-info">{{result.link}}</span>
+            </a>
+          </irsc-card-footer>
+        </irsc-card>
+      </div>
+    </div>
+
+  </div>
+</section>

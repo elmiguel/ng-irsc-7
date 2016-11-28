@@ -1,0 +1,16 @@
+$bootstrap-sass-asset-helper: true !default;
+$gray-dark:                 #2C3E50 !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+$brand-primary:             #0275d8 !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #ffc425 !default;
+$brand-danger:              #d9534f !default;
+$brand-inverse:             $gray-dark;
+$img-hover:                 $brand-primary;
+$text-white:                #fefefe;
+$white:                     $text-white !default;
+$text-shadow:               1px 2px 3px rgba($gray-dark, .5);

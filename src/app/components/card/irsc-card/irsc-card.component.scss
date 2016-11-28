@@ -1,0 +1,45 @@
+@import '../../../../styles/variables';
+
+.irsc-card {
+  min-height: 425px;
+  box-shadow: 1px 2px 3px rgba($brand-inverse, .30), 2px 3px 5px rgba($brand-inverse, .25);
+  margin: .5em .25em;
+  padding: 1em;
+  background-color: $white;
+  color: $brand-inverse;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+
+  >i {
+    margin-right: .20em;
+    text-shadow: 1px 2px 1px rgba($brand-inverse, .75)
+  }
+
+  &:hover {
+    box-shadow: 1px 4px 5px rgba($brand-inverse, .6), 2px 5px 6px rgba($brand-inverse, .5);
+    -webkit-transform:scale(1.02);
+    transform:scale(1.02);
+  }
+
+  .card-header {
+    overflow: hidden;
+    max-width: 90%;
+  }
+
+  .card-content {
+    overflow: hidden;
+    max-height: 165px;
+  }
+  .card-footer {
+    position: absolute;
+    bottom: 0;
+    margin: 1em 0;
+    overflow: hidden;
+    max-width: 90%;
+  }
+
+  img.img-responsive {
+    margin: 1em auto;
+    width: 90%;
+  }
+}

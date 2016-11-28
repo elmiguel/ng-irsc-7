@@ -1,0 +1,28 @@
+<section>
+  <div class="container">
+    <div class="row text-xs-center">
+      <h1>Let's Get Started!</h1>
+    </div>
+  </div>  
+</section>
+
+<router-outlet></router-outlet>
+
+<div class="container">
+  <div class="row text-center">
+    <ul class="list-inline list-menu">
+      <li class="list-inline-item">
+        <a [routerLink]="['find-your-path']">Find Your Path</a>
+      </li>
+      <li class="list-inline-item">
+        <a [routerLink]="['apply']">Apply</a>
+      </li>
+      <li class="list-inline-item">
+        <a [routerLink]="['afford']">Afford</a>
+      </li>
+      <li class="list-inline-item">
+        <a [routerLink]="['enroll']">Enroll</a>
+      </li>
+    </ul>
+  </div>
+</div>

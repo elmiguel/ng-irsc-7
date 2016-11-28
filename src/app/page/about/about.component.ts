@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {Animations} from '../animations';
-import {ActivatedRoute} from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { Animations } from '../animations'
+import { ActivatedRoute } from '@angular/router'
 
 
 @Component({

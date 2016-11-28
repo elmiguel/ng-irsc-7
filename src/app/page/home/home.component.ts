@@ -7,6 +7,7 @@ import {
   transition,
   animate} from '@angular/core'
 import { ScrollimateService } from 'ng2-scrollimate'
+import { Animations } from '../animations'
 
 let elementTriggerDefault = [
   state('inactive', style({
@@ -45,7 +46,9 @@ let animationDefault = {
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  // host: { '[@routeAnimation]': 'true' },
   animations: [
+    // Animations.page,
     trigger('factsState', elementTriggerDefault),
     trigger('stepsState', elementTriggerDefault),
     trigger('galleryState', elementTriggerDefault),

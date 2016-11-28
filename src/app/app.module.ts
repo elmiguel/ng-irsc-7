@@ -11,7 +11,7 @@ import { AppComponent } from './app.component'
 import { NavComponent } from './nav/nav.component'
 import { PageComponent } from './page/page.component'
 import { FooterComponent } from './footer/footer.component'
-
+import { Animations } from './page/animations'
 import { PageModule } from './page/page.module'
 
 import { PageService } from './services/page.service'
@@ -37,6 +37,7 @@ import { SearchService } from './services/search.service';
     ])
   ],
   providers: [
+    Animations,
     PageService,
     SearchService,
   ],
